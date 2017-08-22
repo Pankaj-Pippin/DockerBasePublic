@@ -4,9 +4,7 @@ docker tag $IMAGE_NAME $IMAGE_NAME:$SOURCE_COMMIT
 docker push $IMAGE_NAME:$SOURCE_COMMIT
 
 
-echo $SOURCE_BRANCH > denv.txt
-
-echo $SOURCE_COMMIT >> denv.txt
+echo "$SOURCE_BRANCH - $SOURCE_COMMIT " > env.txt
 
 cat denv.txt
 
