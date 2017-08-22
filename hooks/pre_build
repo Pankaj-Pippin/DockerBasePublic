@@ -7,3 +7,7 @@ docker push $IMAGE_NAME:$SOURCE_COMMIT
 echo $SOURCE_BRANCH > denv.txt
 
 echo $SOURCE_COMMIT >> denv.txt
+
+cat denv.txt
+
+echo "hi"
