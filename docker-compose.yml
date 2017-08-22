@@ -1,0 +1,3 @@
+build: .
+  command: echo SOURCE_COMMIT >denv.txt
+  
