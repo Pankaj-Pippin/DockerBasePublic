@@ -1,10 +1,10 @@
 #!/bin/sh
 
-docker tag $IMAGE_NAME $IMAGE_NAME:$SOURCE_COMMIT
-docker push $IMAGE_NAME:$SOURCE_COMMIT
+#docker tag $IMAGE_NAME $IMAGE_NAME:$SOURCE_COMMIT
+docker push $IMAGE_NAME:$SOURCE_BRANCH_$SOURCE_COMMIT
 
 
-echo "$SOURCE_BRANCH - $SOURCE_COMMIT " > env.txt
+echo "$SOURCE_BRANCH - $SOURCE_COMMIT " > denv.txt
 
 cat denv.txt
 
