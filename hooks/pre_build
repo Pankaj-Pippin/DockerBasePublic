@@ -4,8 +4,8 @@
 docker push $IMAGE_NAME:$SOURCE_BRANCH_$SOURCE_COMMIT
 
 
-echo "$SOURCE_BRANCH - $SOURCE_COMMIT " > denv.txt
+echo "$SOURCE_BRANCH - $SOURCE_COMMIT " > env.txt
 
-cat denv.txt
+cat env.txt
 
 echo "hi"
